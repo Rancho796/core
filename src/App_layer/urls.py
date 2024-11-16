@@ -5,5 +5,5 @@ from userapp import views as v
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',v.indexView),
-    path('create-user/',v.createUser)
+    path('user/create-user/',v.createUser)
 ]
