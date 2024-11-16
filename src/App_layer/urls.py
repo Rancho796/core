@@ -1,9 +1,9 @@
-
 from django.contrib import admin
 from django.urls import path
-from Browser import views as v
+from userapp import views as v
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('',v.indexView),
-    path('admin/', admin.site.urls)
+    path('create-user/',v.createUser)
 ]
