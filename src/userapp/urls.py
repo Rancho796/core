@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views as v
+from .views import v
 
-urlpatterns =[
-    path('usersLogin/',v.browserLogin)
+urlpatterns = [
+    path("createUser",v.CreateUser),
 ]
